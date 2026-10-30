@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+.curso-pswe-07/

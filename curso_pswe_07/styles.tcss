@@ -1,0 +1,43 @@
+Screen {
+    background: navy;
+    color: white;
+}
+#heading {
+    height: 3;
+    border: ascii white;
+    text-align: center;
+}
+#body {
+    height: 1fr;
+    border: ascii white;
+    padding: 0 1;
+}
+#empty { height: auto; }
+#filter { height: 1; }
+#filters { height: 3; }
+#message { height: 1; }
+#notice { height: auto; color: yellow; }
+ListView { height: 1fr; }
+ListItem { height: 1; }
+ListItem.completed { color: silver; text-style: strike; }
+ListItem.--highlight { border-left: ascii white; text-style: reverse; }
+.actions { height: 3; align-horizontal: center; }
+Button { min-width: 7; margin: 0; padding: 0 1; }
+Button:focus { border: double white; text-style: reverse; }
+#hints { height: 1; text-align: center; }
+TaskDialog { align: center middle; }
+TaskDialog #heading { dock: top; width: 100%; }
+TaskDialog #hints { dock: bottom; }
+DeleteDialog { align: center middle; }
+DeleteDialog #heading { dock: top; width: 100%; }
+DeleteDialog #hints { dock: bottom; }
+#delete-dialog { width: 60; height: 10; border: ascii white; padding: 1; }
+#delete-dialog #error { height: 2; color: yellow; }
+#dialog { width: 74; height: 18; border: ascii white; padding: 0 1; }
+#dialog > Static { height: 1; }
+#title { height: 3; }
+#description { height: 6; }
+#dialog #error { color: yellow; height: 2; }
+TaskDialog #notice, DeleteDialog #notice { dock: top; margin-top: 3; }
+ResizeGuard { align: center middle; }
+#resize { width: 100%; height: auto; border: ascii white; padding: 1; }
